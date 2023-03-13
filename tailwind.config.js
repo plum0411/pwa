@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Noto Serif TC'],
+        // adelia: ["ADELIA", "cursive"],
+      },
+    },
   },
   plugins: [],
 }

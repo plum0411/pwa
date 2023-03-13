@@ -4,12 +4,26 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import InfoPage from "./InfoPage";
+import AchievementsPage from "./AchievementsPage";
+import BearPage from "./BearPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      {/* <Route path="/" element={<Login />} /> */}
+      <Route path="/" element={<App />} />
+      <Route path="/info" element={<InfoPage />} />
+      <Route path="/achievements" element={<AchievementsPage />} />
+      <Route path="/about-bear" element={<BearPage />} />
+      <Route path="*" element={<h1>404 Page Not Found</h1>} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want your app to work offline and load faster, you can change
