@@ -37,18 +37,20 @@ function App() {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    <img
-                      // className="block h-8 w-auto lg:hidden rounded-full"
-                      className="block h-8 w-auto lg:hidden rounded-lg"
-                      src='./img/bear_rect.png'
-                      alt="Your Company"
-                    />
-                    <img
-                      // className="hidden h-8 w-auto lg:block"
-                      className="hidden h-8 w-auto lg:block rounded-lg"
-                      src='./img/bear_rect.png'
-                      alt="Your Company"
-                    />
+                    <a href='./'>
+                      <img
+                        // className="block h-8 w-auto lg:hidden rounded-full"
+                        className="block h-8 w-auto lg:hidden rounded-lg"
+                        src='./img/bear_rect.png'
+                        alt="Your Company"
+                      />
+                      <img
+                        // className="hidden h-8 w-auto lg:block"
+                        className="hidden h-8 w-auto lg:block rounded-lg"
+                        src='./img/bear_rect.png'
+                        alt="Your Company"
+                      />
+                    </a>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
@@ -92,9 +94,58 @@ function App() {
           </>
         )}
       </Disclosure>
-      <div className="grid grid-cols-6 p-24 relative overflow-hidden bg-white dark:bg-stone-900">
-        <img className="rounded-full border-8 border-gray-200 " src="./img/me.png" alt="image description" />
-        <div className="col-span-5 text-left pl-40">
+      <div className="grid sm:grid-cols-6 grid-cols-1 p-24 relative overflow-hidden bg-white dark:bg-stone-900">
+        <div className='col-span-1'>
+          <img className="rounded-full border-8 border-gray-200 " src="./img/me.png" alt="image description" />
+
+          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+
+          <p className="text-2xl my-4 font-black dark:text-white">Expertise</p>
+          <li class="flex items-center text-base my-4 dark:text-white">
+            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            資料文檔統整
+          </li>
+          <li class="flex items-center text-base my-4 dark:text-white">
+            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            前端Logo設計
+          </li>
+          <li class="flex items-center text-base my-4 dark:text-white">
+            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            簡報製作
+          </li>
+          <li class="flex items-center text-base my-4 dark:text-white">
+            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            獨立思考能力
+          </li>
+
+          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+
+          <p className="text-2xl my-4 font-black dark:text-white">Contact</p>
+          <li class="flex text-sm my-4 dark:text-white">
+            <img src='./img/phone-call.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+            0966-326329
+          </li>
+          {/* <li class="flex text-sm my-4 dark:text-white">
+            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            台中市西屯區漢翔路127號8F-1
+          </li> */}
+          <li class="flex text-sm my-4 dark:text-white">
+            <img src='./img/email.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+            mayble0411@gmail.com
+          </li>
+          <li class="flex text-sm my-4 dark:text-white">
+            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+            <a href='https://www.instagram.com/plum_0411/'>@plum_0411</a>
+          </li>
+          <li class="flex text-sm my-4 dark:text-white">
+            {/* <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> */}
+            <img src='./img/linkedin.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+            <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
+          </li>
+
+        </div>
+
+        <div className="sm:col-span-5 col-span-1 text-left sm:pl-24">
           <p className="text-4xl font-black dark:text-white">張郁梅</p>
           <p className="text-lg my-4 dark:text-white">ＳＥＬＦ　ＩＮＴＲＯ</p>
           <p className="text-lg my-4 dark:text-white">
@@ -105,11 +156,22 @@ function App() {
             也幫助我再專案中從不同視角優化使用者體驗並更好的與合作夥伴溝通。</p>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
-          <ol class="items-center sm:flex">
+          <p className="text-3xl my-4 font-black dark:text-white">Education</p>
+          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          <div className='grid grid-cols-2 mt-8'>
+            <img src="./img/ia.png" className='w-48'></img>
+            <p className="text-lg my-4 dark:text-white align-middle pt-16">
+              國立台中科技大學<br></br>
+              <b className="text-3xl">資訊應用菁英班</b>
+              <br></br>五專部
+            </p>
+          </div>
+          <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:my-10 dark:bg-stone-800"></hr>
+          <ol class="items-center sm:flex grid sm:grid-cols-3">
             <li class="relative mb-6 sm:mb-0">
               <div class="flex items-center">
                 <div class="z-10 flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
-                  <img src='https://sites.google.com/a/mail.yaes.tc.edu.tw/tai-zhong-shi-xi-tun-qu-yong-an-guo-xiao/_/rsrc/1472691250403/xiao-hui/%E6%A0%A1%E5%BE%BD2.jpg?height=304&width=320'></img>
+                  <img src='./img/school1-1.png'></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
               </div>
@@ -130,10 +192,11 @@ function App() {
             </li>
             <li class="relative mb-6 sm:mb-0">
               <div class="flex items-center">
-                <div class="z-10 flex items-center justify-center w-6 h-6 bg-amber-100 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
-                  <svg aria-hidden="true" class="w-3 h-3 text-amber-800 dark:text-amber-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <div class="z-10 flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
+                  {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-800 dark:text-amber-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                  </svg>
+                  </svg> */}
+                  <img src='./img/school2-1.png'></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
               </div>
@@ -153,10 +216,11 @@ function App() {
             </li>
             <li class="relative mb-6 sm:mb-0">
               <div class="flex items-center">
-                <div class="z-10 flex items-center justify-center w-6 h-6 bg-amber-200 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
-                  <svg aria-hidden="true" class="w-3 h-3 text-amber-900 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <div class="z-10 flex items-center justify-center w-16 h-16 bg-amber-200 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
+                  {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-900 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                  </svg>
+                  </svg> */}
+                  <img src='./img/school3-1.png'></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
               </div>
@@ -177,6 +241,44 @@ function App() {
             </li>
           </ol>
 
+          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <p className="text-3xl my-4 font-black dark:text-white">Program Language</p>
+          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+
+          <div className='grid grid-cols-3'>
+            <p className="text-lg my-4 dark:text-white">HTML5</p>
+            <p className="text-lg my-4 dark:text-white">SQL</p>
+            <p className="text-lg my-4 dark:text-white">PHP</p>
+            <p className="text-lg my-4 dark:text-white">CSS</p>
+            <p className="text-lg my-4 dark:text-white">Python</p>
+            <p className="text-lg my-4 dark:text-white">JavaScript</p>
+          </div>
+
+          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <p className="text-3xl my-4 font-black dark:text-white">Software</p>
+          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+
+          <div className='grid grid-cols-3'>
+            <p className="text-lg my-4 dark:text-white">Zbrush</p>
+            <p className="text-lg my-4 dark:text-white">3DsMax</p>
+            <p className="text-lg my-4 dark:text-white">Blender</p>
+            <p className="text-lg my-4 dark:text-white">Photoshop</p>
+            <p className="text-lg my-4 dark:text-white">PowerPoint</p>
+            <p className="text-lg my-4 dark:text-white">Canva</p>
+            <p className="text-lg my-4 dark:text-white">Illustrator</p>
+            <p className="text-lg my-4 dark:text-white">Visual Studio Code</p>
+          </div>
+
+          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <p className="text-3xl my-4 font-black dark:text-white">Plugin Tool</p>
+          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+
+          <div className='grid grid-cols-3'>
+            <p className="text-lg my-4 dark:text-white">TailwindCSS</p>
+            <p className="text-lg my-4 dark:text-white">ant-Design</p>
+            <p className="text-lg my-4 dark:text-white">Bootstrap</p>
+            <p className="text-lg my-4 dark:text-white">FlowBite</p>
+          </div>
         </div>
       </div>
     </div>
