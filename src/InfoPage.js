@@ -95,7 +95,7 @@ function App() {
       </Disclosure>
       <div className="grid sm:grid-cols-6 grid-cols-1 p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
-          <img className="rounded-full border-8 border-gray-200 " src="./img/me.png" alt="image description" />
+          <img className="rounded-full border-8 border-stone-400 mb-4" src="./img/me.png" alt="image description" />
 
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
@@ -244,7 +244,7 @@ function App() {
           <p className="text-3xl my-4 font-black dark:text-white">Program Language</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='grid grid-cols-3'>
+          <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">HTML5</p>
             <p className="text-lg my-4 dark:text-white">SQL</p>
             <p className="text-lg my-4 dark:text-white">PHP</p>
@@ -257,7 +257,7 @@ function App() {
           <p className="text-3xl my-4 font-black dark:text-white">Software</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='grid grid-cols-3'>
+          <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">Zbrush</p>
             <p className="text-lg my-4 dark:text-white">3DsMax</p>
             <p className="text-lg my-4 dark:text-white">Blender</p>
@@ -272,7 +272,7 @@ function App() {
           <p className="text-3xl my-4 font-black dark:text-white">Plugin Tool</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='grid grid-cols-3'>
+          <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">TailwindCSS</p>
             <p className="text-lg my-4 dark:text-white">ant-Design</p>
             <p className="text-lg my-4 dark:text-white">Bootstrap</p>
