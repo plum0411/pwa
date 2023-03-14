@@ -1,11 +1,10 @@
-import { React, Fragment, Layout } from 'react'
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from './logo.svg';
+import { React, } from 'react'
+// import { HashRouter, Route, Routes } from "react-router-dom";
+import { Disclosure, } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+// import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
-import InfoPage from "./InfoPage";
 
 const navigation = [
   { name: 'info', href: './info', current: false },
@@ -40,7 +39,7 @@ function App() {
                     <a href='./'>
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
-                        className="block h-8 w-auto lg:hidden rounded-lg"
+                        className="block h-8 h-8 lg:hidden rounded-lg"
                         src='./img/bear_rect.png'
                         alt="Your Company"
                       />
@@ -121,25 +120,25 @@ function App() {
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-2xl my-4 font-black dark:text-white">Contact</p>
-          <li class="flex text-sm my-4 dark:text-white">
-            <img src='./img/phone-call.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+          <li class="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/phone-call.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             0966-326329
           </li>
           {/* <li class="flex text-sm my-4 dark:text-white">
             <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             台中市西屯區漢翔路127號8F-1
           </li> */}
-          <li class="flex text-sm my-4 dark:text-white">
-            <img src='./img/email.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+          <li class="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/email.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             mayble0411@gmail.com
           </li>
-          <li class="flex text-sm my-4 dark:text-white">
-            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+          <li class="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             <a href='https://www.instagram.com/plum_0411/'>@plum_0411</a>
           </li>
-          <li class="flex text-sm my-4 dark:text-white">
+          <li class="flex text-sm my-4 dark:text-white items-center">
             {/* <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> */}
-            <img src='./img/linkedin.svg' class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"></img>
+            <img src='./img/linkedin.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
           </li>
 
