@@ -1,11 +1,10 @@
-import { React, Fragment, Layout } from 'react'
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from './logo.svg';
+import { React } from 'react'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+// import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
-import InfoPage from "./InfoPage";
+
 
 const navigation = [
   { name: 'info', href: './info', current: false },
@@ -109,7 +108,7 @@ function App() {
               <h1 className="font text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-left">
                 哈嘍ヾ(๑•̀∀•́๑)ツ，我是張郁梅
               </h1>
-              <p className="mt-4 text-xl text-gray-500 dark:text-yellow-700 text-left">
+              <p className="mt-4 text-xl text-gray-500 dark:text-yellow-600 text-left">
                 這是我做的自我介紹網站，瀏覽看看來認識我吧！
               </p>
             </div>
@@ -177,7 +176,7 @@ function App() {
                   </div>
                 </div>
                 <button
-                  href="info"
+                  href="./info"
                   className="z-10 inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500"
                 >
                   開始吧！
