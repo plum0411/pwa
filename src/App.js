@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 function App() {
   return (
-    <div className="App font-poppins">
+    <div className="App font-poppins bg-white dark:bg-stone-900 h-full m-0 p-0">
 
 
       <Disclosure as="nav" className="bg-yellow-800">

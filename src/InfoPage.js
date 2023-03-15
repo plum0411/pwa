@@ -17,7 +17,7 @@ function classNames(...classes) {
 }
 function App() {
   return (
-    <div className="App font-poppins">
+    <div className="App font-poppins bg-white dark:bg-stone-900">
       <Disclosure as="nav" className="bg-yellow-800">
         {({ open }) => (
           <>
@@ -25,7 +25,7 @@ function App() {
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-stone-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -58,7 +58,7 @@ function App() {
                           key={item.name}
                           href={item.href}
                           className={classNames(
-                            item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
+                            item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
                             'rounded-md px-3 py-2 text-sm font-medium'
                           )}
                           aria-current={item.current ? 'page' : undefined}
@@ -80,7 +80,7 @@ function App() {
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
+                      item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
                       'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
@@ -95,8 +95,9 @@ function App() {
       </Disclosure>
       <div className="grid sm:grid-cols-6 grid-cols-1 p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
-          <img className="rounded-full border-8 border-stone-400 mb-4" src="./img/me.png" alt="image description" />
-
+          <div className='flex justify-center'>
+            <img className="rounded-full border-8 border-stone-400 mb-4 sm:w-auto w-40 justify-center" src="./img/me.png" alt="image description" />
+          </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-2xl my-4 font-black dark:text-white">Expertise</p>
@@ -120,6 +121,8 @@ function App() {
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-2xl my-4 font-black dark:text-white">Contact</p>
+
+
           <li class="flex text-sm my-4 dark:text-white items-center">
             <img src='./img/phone-call.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             0966-326329
@@ -142,7 +145,10 @@ function App() {
             <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
           </li>
 
+          <hr class="w-full h-1 mx-auto mt-4 mb-8 bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+
         </div>
+
 
         <div className="sm:col-span-5 col-span-1 text-left sm:pl-24">
           <p className="text-4xl font-black dark:text-white">張郁梅</p>
@@ -156,32 +162,32 @@ function App() {
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-3xl my-4 font-black dark:text-white">Education</p>
-          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
-          <div className='grid grid-cols-2 mt-8'>
+          {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          <div className='grid sm:grid-cols-2 mt-8 justify-center'>
             <img src="./img/ia.png" className='w-48'></img>
-            <p className="text-lg my-4 dark:text-white align-middle pt-16">
+            <p className="text-lg my-4 dark:text-white align-middle sm:pt-16">
               國立台中科技大學<br></br>
               <b className="text-3xl">資訊應用菁英班</b>
               <br></br>五專部
             </p>
           </div>
-          <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:my-10 dark:bg-stone-800"></hr>
+          <hr class="w-full h-0.5 mx-auto mb-8 mt-4 bg-stone-200 border-0 rounded md:my-10 dark:bg-stone-800"></hr>
           <ol class="items-center sm:flex grid sm:grid-cols-3">
             <li class="relative mb-6 sm:mb-0">
               <div class="flex items-center">
                 <div class="z-10 flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
-                  <img src='./img/school1-1.png'></img>
+                  <img src='./img/school1-1.png' class='w-full h-full'></img>
                 </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
+                <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
               <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-black text-gray-900 dark:text-white">
+                <h3 class="text-lg font-black text-stone-900 dark:text-white">
                   國立永安國民小學
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   畢業於2015
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-stone-500 dark:text-stone-400">
                   {/* 407台中市西屯區西屯路三段133號<br></br> */}
                   「鐵肩擔教育，笑臉看兒童」，秉持「學生第一」「教學為先」及「多元適性」的原則，創造學生學習
                   高峰經驗，適性揚才，培養學生身心及五育均衡發展，以實現全人教育，創
@@ -195,18 +201,18 @@ function App() {
                   {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-800 dark:text-amber-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                   </svg> */}
-                  <img src='./img/school2-1.png'></img>
+                  <img src='./img/school2-1.png' class='w-full h-full'></img>
                 </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
+                <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
               <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-black text-gray-900 dark:text-white">
+                <h3 class="text-lg font-black text-stone-900 dark:text-white">
                   國立福科國民中學
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   畢業於2018
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-stone-500 dark:text-stone-400">
                   {/* 407台中市西屯區福林路333號<br></br> */}
                   因應未來多元社會的發展，本校教學目標為開展學生多元智慧，教師教學多元生動，輔以班級經營策略，
                   結合科學、英語、資訊科技學習環境，強調因材施教，將每一個孩子帶上來，期許學生立足福科、放眼未來。
@@ -219,18 +225,18 @@ function App() {
                   {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-900 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                   </svg> */}
-                  <img src='./img/school3-1.png'></img>
+                  <img src='./img/school3-1.png' class='w-full h-full'></img>
                 </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-stone-800"></div>
+                <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
               <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-black text-gray-900 dark:text-white">
+                <h3 class="text-lg font-black text-stone-900 dark:text-white">
                   國立台中科技大學
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   就讀中
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-stone-500 dark:text-stone-400">
                   {/* 404台中市北區三民路三段129號<br></br> */}
                   國立臺中科技大學，簡稱臺中科大、中科大、NTCUST、NUTC，是一所位於中華民國臺中市的國立科技大學，
                   現有四大學制：日間部、進修部、空中學院、進修學院。
@@ -242,7 +248,7 @@ function App() {
 
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
           <p className="text-3xl my-4 font-black dark:text-white">Program Language</p>
-          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
           <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">HTML5</p>
@@ -255,7 +261,7 @@ function App() {
 
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
           <p className="text-3xl my-4 font-black dark:text-white">Software</p>
-          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
           <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">Zbrush</p>
@@ -270,7 +276,7 @@ function App() {
 
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
           <p className="text-3xl my-4 font-black dark:text-white">Plugin Tool</p>
-          {/* <hr class="w-full h-0.5 mx-auto bg-gray-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
           <div className='grid sm:grid-cols-3 grid-cols-2'>
             <p className="text-lg my-4 dark:text-white">TailwindCSS</p>
