@@ -124,7 +124,7 @@ function App() {
                     <img
                       src="./img/bear-sacrifice.jpg"
                       alt="古埃及熊麻獻祭圖"
-                      className="h-auto max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter scale-100 grayscale hover:grayscale-0 hover:scale-95"
+                      className="h-auto max-w-lg transition-all duration-300 cursor-pointer filter scale-100 grayscale hover:grayscale-0 hover:scale-95"
                     // className="h-auto max-w-lg transition-all duration-300 rounded-lg blur-sm hover:blur-none"
                     />
                     <div className="flex items-center space-x-6 lg:space-x-8">
@@ -175,7 +175,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <button className="z-10 inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500">
+                <button className="z-10 justify-center items-center inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500">
                   <a href="./info">
                     開始吧！
                   </a>
