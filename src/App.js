@@ -175,11 +175,10 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <button
-                  href="./info"
-                  className="z-10 inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500"
-                >
-                  開始吧！
+                <button className="z-10 inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500">
+                  <a href="./info">
+                    開始吧！
+                  </a>
                 </button>
               </div>
             </div>
