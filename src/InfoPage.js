@@ -145,6 +145,12 @@ function App() {
             <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
           </li>
 
+          <li class="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/image-solid.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+            {/* <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img> */}
+            <a href='https://photos.app.goo.gl/aCCxXUJyc1jcuykGA'>@我的黏土作品</a>
+
+          </li>
           <hr class="w-full h-1 mx-auto mt-4 mb-8 bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
         </div>
