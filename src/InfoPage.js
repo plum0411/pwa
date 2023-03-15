@@ -93,7 +93,7 @@ function App() {
           </>
         )}
       </Disclosure>
-      <div className="grid sm:grid-cols-6 grid-cols-1 p-24 relative overflow-hidden bg-white dark:bg-stone-900">
+      <div className="grid sm:grid-cols-6 grid-cols-1 p-12 sm:p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
           <div className='flex justify-center'>
             <img className="rounded-full border-8 border-stone-400 mb-4 sm:w-auto w-40 justify-center" src="./img/me.png" alt="image description" />
@@ -159,7 +159,7 @@ function App() {
         <div className="sm:col-span-5 col-span-1 text-left sm:pl-24">
           <p className="text-4xl font-black dark:text-white">張郁梅</p>
           <p className="text-lg my-4 dark:text-white">ＳＥＬＦ　ＩＮＴＲＯ</p>
-          <p className="text-lg my-4 dark:text-white">
+          <p className="text-base my-4 dark:text-white">
             我是張郁梅，國中畢業後就讀於國立台中科技大學的資訊應用菁英班五專部，
             在求學過程中學習了各項語言(Kotlin、Java、C等)的程式設計基礎以及各式程式開發工具，
             出生於台中的小康家庭，家中成員有四人，我則是長女，在父母開明幽默的教導下，
