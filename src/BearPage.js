@@ -27,7 +27,7 @@ function App() {
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-stone-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -60,7 +60,7 @@ function App() {
                           key={item.name}
                           href={item.href}
                           className={classNames(
-                            item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
+                            item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
                             'rounded-md px-3 py-2 text-sm font-medium'
                           )}
                           aria-current={item.current ? 'page' : undefined}
@@ -82,7 +82,7 @@ function App() {
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
+                      item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
                       'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
@@ -121,7 +121,7 @@ function App() {
             翻滾
           </li>
           <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+            <svg class="w-4 h-4 mr-1.5 text-stone-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
             乖乖聽話
           </li>
 
@@ -169,26 +169,26 @@ function App() {
             身高：
           </p> */}
           <div className=' relative grid sm:grid-cols-2 mt-8 justify-center items-center'>
-            {/* <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2> */}
+            {/* <h2 class="mb-2 text-lg font-semibold text-stone-900 dark:text-white">Password requirements:</h2> */}
 
-            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-white">
+            <ul class="max-w-md space-y-1 text-stone-500 list-disc list-inside dark:text-white">
               <li>
-                品種：<span className='text-gray-400'>熊</span>
+                品種：<span className='text-stone-300'>熊</span>
               </li>
               <li>
-                身高：<span className='text-gray-400'>不到50cm</span>
+                身高：<span className='text-stone-300'>不到50cm</span>
               </li>
               <li>
-                體重：<span className='text-gray-400'>500g ~</span>
+                體重：<span className='text-stone-300'>500g ~</span>
               </li>
               <li>
-                休閒活動：<span className='text-gray-400'>欺負熊麻、命令人類</span>
+                休閒活動：<span className='text-stone-300'>欺負熊麻、命令人類</span>
               </li>
               <li>
-                喜歡的食物：<span className='text-gray-400'>牛奶</span>
+                喜歡的食物：<span className='text-stone-300'>牛奶</span>
               </li>
               <li>
-                討厭的食物：<span className='text-gray-400'>有腥味的食物</span>
+                討厭的食物：<span className='text-stone-300'>有腥味的食物</span>
               </li>
             </ul>
             <img src="./img/bear1.png" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20' alt='bear rest'></img>
