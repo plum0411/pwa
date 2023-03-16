@@ -40,13 +40,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 h-8 lg:hidden rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                     </a>

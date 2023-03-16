@@ -43,13 +43,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 w-auto lg:hidden rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                     </a>
@@ -100,15 +100,15 @@ function App() {
       <div className="relative overflow-hidden bg-white dark:bg-stone-900">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-0 sm:static sm:px-6 lg:px-8">
-            <div className="sm:max-w-lg">
-              <h1 className="font text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl text-left">
+            <div className="sm:max-w-lg sm:m-0 mx-12">
+              <h1 className="font sm:text-4xl text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl text-left">
                 Mayble Chang
               </h1>
               <br></br>
-              <h1 className="font text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-left">
+              <h1 className="font sm:text-2xl text-xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-left">
                 哈嘍ヾ(๑•̀∀•́๑)ツ，我是張郁梅
               </h1>
-              <p className="mt-4 text-xl text-gray-500 dark:text-yellow-600 text-left">
+              <p className="mt-4 sm:text-xl text-base text-gray-500 dark:text-yellow-600 text-left">
                 這是我做的自我介紹網站，瀏覽看看來認識我吧！
               </p>
             </div>
@@ -175,7 +175,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <button className="z-10 justify-center items-center inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500">
+                <button className="z-10 sm:m-0 mx-28 my-36 justify-center items-center inline-block rounded-md border border-transparent bg-yellow-400 py-3 px-8 text-center font-medium hover:bg-yellow-500">
                   <a href="./info">
                     開始吧！
                   </a>

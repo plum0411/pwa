@@ -42,13 +42,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 w-auto lg:hidden rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear_rect.png'
+                        src='./img/bear-rect.png'
                         alt="Your Company"
                       />
                     </a>
@@ -144,7 +144,7 @@ function App() {
           </li> */}
           <li class="flex text-sm my-4 dark:text-white items-center">
             <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
-            <a href='https://www.instagram.com/abiju_bear_ma/'>@abiju_bear_ma</a>
+            <a href='https://www.instagram.com/abiju_bear-ma/'>@abiju_bear-ma</a>
           </li>
           <li class="flex text-sm my-4 dark:text-white items-center">
             <img src='./img/img-solid.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='solid'></img>
