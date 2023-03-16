@@ -1,11 +1,10 @@
-import { React, Fragment, Layout } from 'react'
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from './logo.svg';
+import { React, Fragment, } from 'react';
+import { Disclosure, } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+// import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
-import InfoPage from "./InfoPage";
+// import InfoPage from "./InfoPage";
 
 const navigation = [
   { name: 'info', href: './info', current: false },
@@ -100,7 +99,7 @@ function App() {
       <div className="grid sm:grid-cols-6 grid-cols-1 p-12 sm:p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
           <div className='flex justify-center'>
-            <img className="rounded-full border-8 border-black mb-4 sm:w-auto w-40 justify-center" src="./img/logo.png" alt="image description" />
+            <img className="rounded-full border-8 border-black mb-4 sm:w-auto w-40 justify-center" src="./img/logo.png" alt="description" />
           </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
@@ -144,11 +143,11 @@ function App() {
             mayble0411@gmail.com
           </li> */}
           <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
             <a href='https://www.instagram.com/abiju_bear_ma/'>@abiju_bear_ma</a>
           </li>
           <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/image-solid.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+            <img src='./img/img-solid.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='solid'></img>
             {/* <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img> */}
             <a href='https://photos.app.goo.gl/3WybRNACKhetdc9Z9'>@熊麻寫真集</a>
 
@@ -174,32 +173,32 @@ function App() {
 
             <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-white">
               <li>
-                品種：<a className='text-gray-400'>熊</a>
+                品種：<span className='text-gray-400'>熊</span>
               </li>
               <li>
-                身高：<a className='text-gray-400'>不到50cm</a>
+                身高：<span className='text-gray-400'>不到50cm</span>
               </li>
               <li>
-                體重：<a className='text-gray-400'>500g ~</a>
+                體重：<span className='text-gray-400'>500g ~</span>
               </li>
               <li>
-                休閒活動：<a className='text-gray-400'>欺負熊麻、命令人類</a>
+                休閒活動：<span className='text-gray-400'>欺負熊麻、命令人類</span>
               </li>
               <li>
-                喜歡的食物：<a className='text-gray-400'>牛奶</a>
+                喜歡的食物：<span className='text-gray-400'>牛奶</span>
               </li>
               <li>
-                討厭的食物：<a className='text-gray-400'>有腥味的食物</a>
+                討厭的食物：<span className='text-gray-400'>有腥味的食物</span>
               </li>
             </ul>
-            <img src="./img/bear1.png" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20'></img>
+            <img src="./img/bear1.png" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20' alt='bear rest'></img>
           </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-3xl my-4 font-black dark:text-white">說一些話吧熊麻</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
           <div className='grid sm:grid-cols-2 mt-8 justify-center'>
-            <img src="./img/bear3.png" className='w-96'></img>
+            <img src="./img/bear3.png" className='w-96' alt='bear-giragira'></img>
             <p className="sm:text-3xl text-lg my-4 dark:text-white sm:pt-16 sm:text-left text-center">
               哈嘍<br></br>
               <b className="sm:text-6xl text-3xl">我是熊麻</b>
