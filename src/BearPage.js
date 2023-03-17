@@ -1,32 +1,29 @@
-import { React } from 'react'
-import { Disclosure } from '@headlessui/react'
+// import React from 'react';
+import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-// import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
 
 const navigation = [
-  { name: 'info', href: './info', current: false },
-  { name: 'achievements', href: '/achievements', current: false },
-  { name: 'about bear', href: '/about-bear', current: false },
-]
+  { name: 'info', href: '/info', current: "" },
+  { name: 'achievements', href: '/achievements', current: "" },
+  { name: 'about bear', href: '/about-bear', current: "" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
+
 function App() {
   return (
-    <div className="App font-poppins">
-
-
-      <Disclosure as="nav" className="bg-yellow-800">
+    <div className="App font-poppins bg-white dark:bg-stone-900 h-full m-0 p-0">
+      <Disclosure as="div" className="bg-yellow-800">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-stone-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-yellow-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -38,28 +35,26 @@ function App() {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
                     <a href='./'>
-                      <img
-                        // className="block h-8 w-auto lg:hidden rounded-full"
-                        className="block h-8 w-auto lg:hidden rounded-lg"
+                      {/* <img
+                        className="block h-8 w-8 lg:hidden rounded-lg"
                         src='./img/bear-rect.webp'
-                        alt="Your Company"
-                      />
+                        alt="plum logo"
+                      /> */}
                       <img
-                        // className="hidden h-8 w-auto lg:block"
-                        className="hidden h-8 w-auto lg:block rounded-lg"
+                        className="hidden h-8 w-8 lg:block rounded-lg"
                         src='./img/bear-rect.webp'
-                        alt="Your Company"
+                        alt="plum logo"
                       />
                     </a>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                      {navigation.map((item) => (
+                      {navigation.map(item => (
                         <a
-                          key={item.name}
+                          key={item.href}
                           href={item.href}
                           className={classNames(
-                            item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
+                            item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
                             'rounded-md px-3 py-2 text-sm font-medium'
                           )}
                           aria-current={item.current ? 'page' : undefined}
@@ -81,7 +76,7 @@ function App() {
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-yellow-900 text-white' : 'text-stone-300 hover:bg-yellow-700 hover:text-white',
+                      item.current ? 'bg-yellow-900 text-white' : 'text-gray-300 hover:bg-yellow-700 hover:text-white',
                       'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
@@ -100,63 +95,63 @@ function App() {
           <div className='flex justify-center'>
             <img className="rounded-full border-8 border-black mb-4 sm:w-auto w-40 justify-center" src="./img/logo.webp" alt="description" />
           </div>
-          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-2xl my-4 font-black dark:text-white">Expertise</p>
-          <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          <li className="flex items-center text-base my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             搗蛋
           </li>
-          <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          <li className="flex items-center text-base my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             欺負人
           </li>
-          <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          <li className="flex items-center text-base my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             邪惡的想法
           </li>
-          <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          <li className="flex items-center text-base my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             翻滾
           </li>
-          <li class="flex items-center text-base my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-stone-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+          <li className="flex items-center text-base my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-stone-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
             乖乖聽話
           </li>
 
-          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-2xl my-4 font-black dark:text-white">Contact</p>
 
 
-          {/* <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/phone-call.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+          {/* <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/phone-call.svg' className="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             0966-326329
           </li> */}
-          {/* <li class="flex text-sm my-4 dark:text-white">
-            <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          {/* <li className="flex text-sm my-4 dark:text-white">
+            <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             台中市西屯區漢翔路127號8F-1
           </li> */}
-          {/* <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/email.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+          {/* <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/email.svg' className="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             mayble0411@gmail.com
           </li> */}
-          <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
+          <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
             <a href='https://www.instagram.com/abiju_bear-ma/'>@abiju_bear-ma</a>
           </li>
-          <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/img-solid.svg' class="w-4 h-4 mr-1.5 flex-shrink-0" alt='solid'></img>
-            {/* <img src='./img/instagram.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img> */}
+          <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/img-solid.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='solid'></img>
+            {/* <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0"></img> */}
             <a href='https://photos.app.goo.gl/3WybRNACKhetdc9Z9'>@熊麻寫真集</a>
 
           </li>
-          {/* <li class="flex text-sm my-4 dark:text-white items-center">
-            <img src='./img/linkedin.svg' class="w-4 h-4 mr-1.5 flex-shrink-0"></img>
+          {/* <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/linkedin.svg' className="w-4 h-4 mr-1.5 flex-shrink-0"></img>
             <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
           </li> */}
 
-          <hr class="w-full h-1 mx-auto mt-4 mb-8 bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <hr className="w-full h-1 mx-auto mt-4 mb-8 bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
         </div>
 
@@ -168,9 +163,9 @@ function App() {
             身高：
           </p> */}
           <div className=' relative grid sm:grid-cols-2 mt-8 justify-center items-center'>
-            {/* <h2 class="mb-2 text-lg font-semibold text-stone-900 dark:text-white">Password requirements:</h2> */}
+            {/* <h2 className="mb-2 text-lg font-semibold text-stone-900 dark:text-white">Password requirements:</h2> */}
 
-            <ul class="max-w-md space-y-1 text-stone-500 list-disc list-inside dark:text-white">
+            <ul className="max-w-md space-y-1 text-stone-500 list-disc list-inside dark:text-white">
               <li>
                 品種：<span className='text-stone-300'>熊</span>
               </li>
@@ -192,10 +187,10 @@ function App() {
             </ul>
             <img src="./img/bear1.webp" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20' alt='bear rest'></img>
           </div>
-          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-3xl my-4 font-black dark:text-white">說一些話吧熊麻</p>
-          {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
+          {/* <hr className="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
           <div className='grid sm:grid-cols-2 mt-8 justify-center'>
             <img src="./img/bear3.webp" className='w-96' alt='bear-giragira'></img>
             <p className="sm:text-3xl text-lg my-4 dark:text-white sm:pt-16 sm:text-left text-center">
@@ -206,7 +201,7 @@ function App() {
           </div>
 
 
-          <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+          <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
         </div>
       </div>
