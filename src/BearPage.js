@@ -1,10 +1,9 @@
-import { React, Fragment, } from 'react';
-import { Disclosure, } from '@headlessui/react';
+import { React } from 'react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
-// import InfoPage from "./InfoPage";
 
 const navigation = [
   { name: 'info', href: './info', current: false },
@@ -42,13 +41,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 w-auto lg:hidden rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                     </a>
@@ -99,7 +98,7 @@ function App() {
       <div className="grid sm:grid-cols-6 grid-cols-1 p-12 sm:p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
           <div className='flex justify-center'>
-            <img className="rounded-full border-8 border-black mb-4 sm:w-auto w-40 justify-center" src="./img/logo.png" alt="description" />
+            <img className="rounded-full border-8 border-black mb-4 sm:w-auto w-40 justify-center" src="./img/logo.webp" alt="description" />
           </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
@@ -191,14 +190,14 @@ function App() {
                 討厭的食物：<span className='text-stone-300'>有腥味的食物</span>
               </li>
             </ul>
-            <img src="./img/bear1.png" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20' alt='bear rest'></img>
+            <img src="./img/bear1.webp" className='w-96 sm:absolute my-4 sm:right-10 sm:top-20' alt='bear rest'></img>
           </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
           <p className="text-3xl my-4 font-black dark:text-white">說一些話吧熊麻</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
           <div className='grid sm:grid-cols-2 mt-8 justify-center'>
-            <img src="./img/bear3.png" className='w-96' alt='bear-giragira'></img>
+            <img src="./img/bear3.webp" className='w-96' alt='bear-giragira'></img>
             <p className="sm:text-3xl text-lg my-4 dark:text-white sm:pt-16 sm:text-left text-center">
               哈嘍<br></br>
               <b className="sm:text-6xl text-3xl">我是熊麻</b>

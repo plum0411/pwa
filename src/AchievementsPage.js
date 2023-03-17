@@ -1,10 +1,9 @@
-import { React, Fragment } from 'react';
-import { Disclosure, } from '@headlessui/react';
+import { React } from 'react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // import logo from './logo.svg';
 import './App.css';
 import './tailwind.css';
-// import InfoPage from "./InfoPage";
 
 const navigation = [
   { name: 'info', href: './info', current: false },
@@ -42,13 +41,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 w-auto lg:hidden rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                     </a>
@@ -107,7 +106,7 @@ function App() {
             <div className='grid grid-cols-2 sm:grid-cols-7'>
               <li class="sm:mb-24 my-0 ml-6 col-span-2 sm:col-span-4">
                 <div class="absolute sm:w-40 sm:h-40 h-16 w-16 bg-stone-200 rounded-full mt-2 sm:-left-20 -left-8 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/record.png' class='' alt='record'></img>
+                  <img src='./img/record.webp' class='' alt='record'></img>
                 </div>
                 <div className='sm:ml-28 ml-8'>
                   <h3 class="flex items-center mb-1 sm:text-lg text-sm font-semibold text-stone-900 dark:text-white">
@@ -138,12 +137,12 @@ function App() {
                   </div>
                 </div>
               </li>
-              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/record-rect.png" alt="description" />
+              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/record-rect.webp" alt="description" />
             </div>
             <div className='grid grid-cols-2 sm:grid-cols-7'>
               <li class="sm:mb-24 my-0 ml-6 col-span-2 sm:col-span-4">
                 <div class="absolute sm:w-40 sm:h-40 h-16 w-16 bg-stone-200 rounded-full mt-2 sm:-left-20 -left-8 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/mouji.png' class='' alt='record'></img>
+                  <img src='./img/mouji.webp' class='' alt='record'></img>
                 </div>
                 <div className='sm:ml-28 ml-8'>
                   <h3 class="flex items-center mb-1 sm:text-lg text-sm font-semibold text-stone-900 dark:text-white">
@@ -170,17 +169,17 @@ function App() {
                 </div>
               </li>
 
-              {/* <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/mouji-rect.png" alt="description" /> */}
+              {/* <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/mouji-rect.webp" alt="description" /> */}
             
               <div className='grid grid-cols-2 gap-4'>
-                <img class="sm:h-64 h-36 sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-12 sm:mb-12 mx-8 rounded-lg" src="./img/mouji-rect3.png" alt="description" />
-                <img class="sm:h-64 h-36 sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-12 sm:mb-12 sm:mx-36 mx-20 rounded-lg" src="./img/mouji-rect2.png" alt="description" />
+                <img class="sm:h-64 h-36 sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-12 sm:mb-12 mx-8 rounded-lg" src="./img/mouji-rect3.webp" alt="description" />
+                <img class="sm:h-64 h-36 sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-12 sm:mb-12 sm:mx-36 mx-20 rounded-lg" src="./img/mouji-rect2.webp" alt="description" />
               </div>
             </div>
             {/* <div className='grid grid-cols-4'>
               <li class="mb-24 ml-6 col-span-3">
                 <div class="absolute w-40 h-40 bg-stone-200 rounded-full mt-2 -left-20 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/mouji.png' class='' alt='mouji'></img>
+                  <img src='./img/mouji.webp' class='' alt='mouji'></img>
                 </div>
                 <div className='ml-28'>
                   <h3 class="flex items-center mb-1 text-lg font-semibold text-stone-900 dark:text-white">
@@ -204,14 +203,14 @@ function App() {
                 </div>
               </li>
               <div className='grid grid-cols-2 gap-4'>
-                <img class="h-64 max-w-xs mx-8 rounded-lg col" src="./img/mouji-rect3.png" alt="description" />
-                <img class="h-64 max-w-xs mx-20 rounded-lg" src="./img/mouji-rect2.png" alt="description" />
+                <img class="h-64 max-w-xs mx-8 rounded-lg col" src="./img/mouji-rect3.webp" alt="description" />
+                <img class="h-64 max-w-xs mx-20 rounded-lg" src="./img/mouji-rect2.webp" alt="description" />
               </div>
             </div> */}
             <div className='grid grid-cols-2 sm:grid-cols-7'>
               <li class="sm:mb-24 my-0 ml-6 col-span-2 sm:col-span-4">
                 <div class="absolute sm:w-40 sm:h-40 h-16 w-16 bg-stone-200 rounded-full mt-2 sm:-left-20 -left-8 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/fire.png' class='' alt='record'></img>
+                  <img src='./img/fire.webp' class='' alt='record'></img>
                 </div>
                 <div className='sm:ml-28 ml-8'>
                   <h3 class="flex items-center mb-1 sm:text-lg text-sm font-semibold text-stone-900 dark:text-white">
@@ -236,12 +235,12 @@ function App() {
                   </div>
                 </div>
               </li>
-              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/fire-rect.png" alt="description" />
+              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/fire-rect.webp" alt="description" />
             </div>
             {/* <div className='grid grid-cols-4'>
               <li class="mb-24 ml-6 col-span-3">
                 <div class="absolute w-40 h-40 bg-stone-200 rounded-full mt-2 -left-20 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/fire.png' class='' alt='fire'></img>
+                  <img src='./img/fire.webp' class='' alt='fire'></img>
                 </div>
                 <div className='ml-28'>
                   <h3 class="flex items-center mb-1 text-lg font-semibold text-stone-900 dark:text-white">
@@ -263,12 +262,12 @@ function App() {
                   </a>
                 </div>
               </li>
-              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/fire-rect.png" alt="description" />
+              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/fire-rect.webp" alt="description" />
             </div> */}
             <div className='grid grid-cols-2 sm:grid-cols-7'>
               <li class="sm:mb-24 my-0 ml-6 col-span-2 sm:col-span-4">
                 <div class="absolute sm:w-40 sm:h-40 h-16 w-16 bg-stone-200 rounded-full mt-2 sm:-left-20 -left-8 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/rapputappu.png' class='' alt='record'></img>
+                  <img src='./img/rapputappu.webp' class='' alt='record'></img>
                 </div>
                 <div className='sm:ml-28 ml-8'>
                   <h3 class="flex items-center mb-1 sm:text-lg text-sm font-semibold text-stone-900 dark:text-white">
@@ -293,12 +292,12 @@ function App() {
                   </div>
                 </div>
               </li>
-              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/rapputappu-rect.png" alt="description" />
+              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/rapputappu-rect.webp" alt="description" />
             </div>
             {/* <div className='grid grid-cols-4'>
               <li class="mb-24 ml-6 col-span-3">
                 <div class="absolute w-40 h-40 bg-stone-200 rounded-full mt-2 -left-20 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/rapputappu.png' class='' alt='rapputappu'></img>
+                  <img src='./img/rapputappu.webp' class='' alt='rapputappu'></img>
                 </div>
                 <div className='ml-28'>
                   <h3 class="flex items-center mb-1 text-lg font-semibold text-stone-900 dark:text-white">
@@ -319,12 +318,12 @@ function App() {
                   </a>
                 </div>
               </li>
-              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/rapputappu-rect.png" alt="description" />
+              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/rapputappu-rect.webp" alt="description" />
             </div> */}
             <div className='grid grid-cols-2 sm:grid-cols-7'>
               <li class="sm:mb-24 my-0 ml-6 col-span-2 sm:col-span-4">
                 <div class="absolute sm:w-40 sm:h-40 h-16 w-16 bg-stone-200 rounded-full mt-2 sm:-left-20 -left-8 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/bear-round.png' class='' alt='record'></img>
+                  <img src='./img/bear-round.webp' class='' alt='record'></img>
                 </div>
                 <div className='sm:ml-28 ml-8'>
                   <h3 class="flex items-center mb-1 sm:text-lg text-sm font-semibold text-stone-900 dark:text-white">
@@ -348,12 +347,12 @@ function App() {
                   </div>
                 </div>
               </li>
-              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/chinese-rect.png" alt="description" />
+              <img class="h-auto sm:max-w-sm max-w-[175%] mt-4 mb-16 sm:mt-0 sm:mb-0 mx-8 rounded-lg col-span-1" src="./img/chinese-rect.webp" alt="description" />
             </div>
             {/* <div className='grid sm:grid-cols-4 '>
               <li class="mb-24 ml-6 sm:col-span-3 col-span-1">
                 <div class="absolute w-40 h-40 bg-stone-200 rounded-full mt-2 -left-20 border border-white dark:border-stone-900 dark:bg-stone-700">
-                  <img src='./img/bear-round.png' class='' alt='bear round'></img>
+                  <img src='./img/bear-round.webp' class='' alt='bear round'></img>
                 </div>
                 <div className='ml-28'>
                   <h3 class="flex items-center mb-1 text-lg font-semibold text-stone-900 dark:text-white">
@@ -374,7 +373,7 @@ function App() {
                   </a>
                 </div>
               </li>
-              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/chinese-rect.png" alt="description" />
+              <img class="h-auto max-w-sm mx-8 rounded-lg" src="./img/chinese-rect.webp" alt="description" />
             </div> */}
 
           </ol>

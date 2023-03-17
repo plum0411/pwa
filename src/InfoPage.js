@@ -1,6 +1,5 @@
-import { React, } from 'react'
-// import { HashRouter, Route, Routes } from "react-router-dom";
-import { Disclosure, } from '@headlessui/react'
+import { React } from 'react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 // import logo from './logo.svg';
 import './App.css';
@@ -40,13 +39,13 @@ function App() {
                       <img
                         // className="block h-8 w-auto lg:hidden rounded-full"
                         className="block h-8 h-8 lg:hidden rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                       <img
                         // className="hidden h-8 w-auto lg:block"
                         className="hidden h-8 w-auto lg:block rounded-lg"
-                        src='./img/bear-rect.png'
+                        src='./img/bear-rect.webp'
                         alt="Your Company"
                       />
                     </a>
@@ -96,7 +95,7 @@ function App() {
       <div className="grid sm:grid-cols-6 grid-cols-1 p-12 sm:p-24 relative overflow-hidden bg-white dark:bg-stone-900">
         <div className='col-span-1'>
           <div className='flex justify-center'>
-            <img className="rounded-full border-8 border-stone-400 mb-4 sm:w-auto w-40 justify-center" src="./img/me.png" alt="description" />
+            <img className="rounded-full border-8 border-stone-400 mb-4 sm:w-auto w-40 justify-center" src="./img/me.webp" alt="description" />
           </div>
           <hr class="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
@@ -170,7 +169,7 @@ function App() {
           <p className="text-3xl my-4 font-black dark:text-white">Education</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
           <div className='grid sm:grid-cols-2 mt-8 justify-center items-center'>
-            <img src="./img/ia.png" className='sm:w-48 w-36 items-center' alt='ia'></img>
+            <img src="./img/ia.webp" className='sm:w-48 w-36 items-center' alt='ia'></img>
             <p className="sm:text-lg text-base my-4 dark:text-white align-middle sm:pt-16">
               國立台中科技大學<br></br>
               <b className="sm:text-3xl text-2xl">資訊應用菁英班</b>
@@ -182,7 +181,7 @@ function App() {
             <li class="relative mb-6 sm:mb-0">
               <div class="flex items-center">
                 <div class="z-10 flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full ring-0 ring-white dark:bg-amber-900 sm:ring-8 dark:ring-stone-800 shrink-0">
-                  <img src='./img/school1-1.png' class='w-full h-full' alt='yonann'></img>
+                  <img src='./img/school1-1.webp' class='w-full h-full' alt='yonann'></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
@@ -207,7 +206,7 @@ function App() {
                   {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-800 dark:text-amber-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                   </svg> */}
-                  <img src='./img/school2-1.png' class='w-full h-full' alt='fcjh'></img>
+                  <img src='./img/school2-1.webp' class='w-full h-full' alt='fcjh'></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
@@ -231,7 +230,7 @@ function App() {
                   {/* <svg aria-hidden="true" class="w-3 h-3 text-amber-900 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                   </svg> */}
-                  <img src='./img/school3-1.png' class='w-full h-full' alt=""></img>
+                  <img src='./img/school3-1.webp' class='w-full h-full' alt=""></img>
                 </div>
                 <div class="hidden sm:flex w-full bg-stone-200 h-0.5 dark:bg-stone-800"></div>
               </div>
