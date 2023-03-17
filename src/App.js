@@ -122,9 +122,9 @@ function App() {
                   <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
 
                     <img
-                      src="./img/bear-sacrifice.webp"
+                      src="./img/bear-sacrifice-sm.webp"
                       alt="古埃及熊麻獻祭圖"
-                      className="h-full w-lg transition-all duration-300 cursor-pointer filter scale-100 grayscale hover:grayscale-0 hover:scale-95"
+                      className="h-full w-full transition-all duration-300 cursor-pointer filter scale-100 grayscale hover:grayscale-0 hover:scale-95"
                     // className="h-auto max-w-lg transition-all duration-300 rounded-lg blur-sm hover:blur-none"
                     />
                     <div className="flex items-center space-x-6 lg:space-x-8">

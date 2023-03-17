@@ -255,7 +255,7 @@ function App() {
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Program Language</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
+          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
             <p className="dark:text-white">HTML5</p>
             <p className="dark:text-white">SQL</p>
             <p className="dark:text-white">PHP</p>
@@ -268,7 +268,7 @@ function App() {
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Software</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
+          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
             <p className="dark:text-white">Zbrush</p>
             <p className="dark:text-white">3DsMax</p>
             <p className="dark:text-white">Blender</p>
@@ -283,7 +283,7 @@ function App() {
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Plugin Tool</p>
           {/* <hr class="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
+          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
             <p className="dark:text-white">TailwindCSS</p>
             <p className="dark:text-white">ant-Design</p>
             <p className="dark:text-white">Bootstrap</p>
