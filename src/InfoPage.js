@@ -254,11 +254,11 @@ function App() {
 
           <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
             <p className="dark:text-white">HTML5</p>
+            <p className="dark:text-white">CSS</p>
+            <p className="dark:text-white">JavaScript</p>
             <p className="dark:text-white">SQL</p>
             <p className="dark:text-white">PHP</p>
-            <p className="dark:text-white">CSS</p>
             <p className="dark:text-white">Python</p>
-            <p className="dark:text-white">JavaScript</p>
           </div>
 
           <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
