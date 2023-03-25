@@ -141,12 +141,31 @@ function App() {
             <a href='https://www.linkedin.com/in/%E9%83%81%E6%A2%85-%E5%BC%B5-768085212/details/certifications/'>@張郁梅</a>
           </li>
 
+          <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
+
+          <p className="text-2xl my-4 font-black dark:text-white">Recreation</p>
+
           <li className="flex text-sm my-4 dark:text-white items-center">
             <img src='./img/img-solid.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='solid'></img>
             {/* <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0"></img> */}
-            <a href='https://photos.app.goo.gl/aCCxXUJyc1jcuykGA'>@我的黏土作品</a>
-
+            <a href='https://photos.app.goo.gl/aCCxXUJyc1jcuykGA'>My clay creation</a>
           </li>
+
+          <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
+            <a href='https://www.instagram.com/plum_friends/'>@plum_friends</a>
+          </li>
+
+          <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
+            <a href='https://www.instagram.com/abiju_bear_ma/'>@abiju_bear_ma</a>
+          </li>
+
+          {/* <li className="flex text-sm my-4 dark:text-white items-center">
+            <img src='./img/instagram.svg' className="w-4 h-4 mr-1.5 flex-shrink-0" alt='instagram'></img>
+            <a href='https://www.instagram.com/melon_seed.word/'>@melon_seed.word</a>
+          </li> */}
+
           <hr className="w-full h-1 mx-auto mt-4 mb-8 bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
 
         </div>
@@ -189,7 +208,7 @@ function App() {
                 <time className="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   畢業於2015
                 </time>
-                <p className="sm:text-base text-xs font-normal text-stone-500 dark:text-stone-300">
+                <p className="sm:text-sm text-xs font-normal text-stone-500 dark:text-stone-300">
                   {/* 407台中市西屯區西屯路三段133號<br></br> */}
                   「鐵肩擔教育，笑臉看兒童」，秉持「學生第一」「教學為先」及「多元適性」的原則，創造學生學習
                   高峰經驗，適性揚才，培養學生身心及五育均衡發展，以實現全人教育，創
@@ -214,7 +233,7 @@ function App() {
                 <time className="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   畢業於2018
                 </time>
-                <p className="sm:text-base text-xs font-normal text-stone-500 dark:text-stone-300">
+                <p className="sm:text-sm text-xs font-normal text-stone-500 dark:text-stone-300">
                   {/* 407台中市西屯區福林路333號<br></br> */}
                   因應未來多元社會的發展，本校教學目標為開展學生多元智慧，教師教學多元生動，輔以班級經營策略，
                   結合科學、英語、資訊科技學習環境，強調因材施教，將每一個孩子帶上來，期許學生立足福科、放眼未來。
@@ -238,7 +257,7 @@ function App() {
                 <time className="block mb-2 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
                   就讀中
                 </time>
-                <p className="sm:text-base text-xs font-normal text-stone-500 dark:text-stone-300">
+                <p className="sm:text-sm text-xs font-normal text-stone-500 dark:text-stone-300">
                   {/* 404台中市北區三民路三段129號<br></br> */}
                   國立臺中科技大學，簡稱臺中科大、中科大、NTCUST、NUTC，是一所位於中華民國臺中市的國立科技大學，
                   現有四大學制：日間部、進修部、空中學院、進修學院。
@@ -252,39 +271,97 @@ function App() {
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Program Language</p>
           {/* <hr className="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
-            <p className="dark:text-white">HTML5</p>
-            <p className="dark:text-white">CSS</p>
-            <p className="dark:text-white">JavaScript</p>
-            <p className="dark:text-white">SQL</p>
-            <p className="dark:text-white">PHP</p>
-            <p className="dark:text-white">Python</p>
+          <div className='sm:text-lg sm:mb-0 mb-8 text-sm grid grid-cols-3 gap-4'>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_html.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">HTML5</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_css.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">CSS</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_javascript.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">JavaScript</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_mysql.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">SQL</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_php.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">PHP</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_python.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Python</a>
+            </div>
           </div>
 
           <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Software</p>
           {/* <hr className="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
-            <p className="dark:text-white">Zbrush</p>
-            <p className="dark:text-white">3DsMax</p>
-            <p className="dark:text-white">Blender</p>
-            <p className="dark:text-white">Photoshop</p>
-            <p className="dark:text-white">PowerPoint</p>
-            <p className="dark:text-white">Canva</p>
-            <p className="dark:text-white">Illustrator</p>
-            <p className="dark:text-white">Visual Studio Code</p>
+          <div className='sm:text-lg sm:mb-0 mb-8 text-sm grid grid-cols-3 gap-4'>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_zbrush.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Zbrush</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_3Ds-max.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">3DsMax</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_blender.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Blender</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_photoshop.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Photoshop</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_illustrator.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Illustrator</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_premiere.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Premiere Pro</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_powerpoint.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">PowerPoint</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_canva.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Canva</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_visual-studio-code.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Visual Studio Code</a>
+            </div>
           </div>
 
           <hr className="w-full h-1 mx-auto bg-amber-200 border-0 rounded md:my-10 dark:bg-yellow-600"></hr>
           <p className="sm:text-3xl text-2-xl my-4 font-black dark:text-white">Plugin Tool</p>
           {/* <hr className="w-full h-0.5 mx-auto bg-stone-200 border-0 rounded md:mb-10 dark:bg-stone-800"></hr> */}
 
-          <div className='sm:text-lg sm:mb-0 mb-4 text-sm grid sm:grid-cols-3 grid-cols-2 gap-4'>
-            <p className="dark:text-white">TailwindCSS</p>
-            <p className="dark:text-white">ant-Design</p>
-            <p className="dark:text-white">Bootstrap</p>
-            <p className="dark:text-white">FlowBite</p>
+          <div className='sm:text-lg sm:mb-0 mb-8 text-sm grid grid-cols-3 gap-4'>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_tailwindcss.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">TailwindCSS</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_ant-design.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">ant-Design</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_bootstrap.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">Bootstrap</a>
+            </div>
+            <div className='sm:grid sm:grid-cols-3 grid-cols-1 items-center'>
+              <img src='./logo/logos_FlowBite.svg' className='transition-all duration-300 cursor-pointer filter scale-100 sepia hover:sepia-0 hover:scale-95' alt='HTML5'></img>
+              <a className="dark:text-white sm:contents hidden">FlowBite</a>
+            </div>
           </div>
         </div>
       </div>
